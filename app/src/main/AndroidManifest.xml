@@ -23,6 +23,22 @@
                 </action>
             </intent-filter>
         </receiver>
+
+        <receiver android:name=".reciver.MyOrderedReciver">
+            <intent-filter android:priority="1">
+                <action android:name="orderedBroadcast">
+
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".reciver.MySecondReciver">
+            <intent-filter android:priority="2">
+                <action android:name="orderedBroadcast2">
+                    
+                </action>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

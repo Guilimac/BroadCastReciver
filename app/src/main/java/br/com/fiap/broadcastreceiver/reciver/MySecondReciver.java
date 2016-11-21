@@ -9,11 +9,9 @@ import android.widget.Toast;
  * Created by guilherme on 21/11/16.
  */
 
-public class MyOrderedReciver extends BroadcastReceiver {
-
-
+public class MySecondReciver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context,"Nvo Reciver 1",Toast.LENGTH_LONG).show();
+        Toast.makeText(context,"Nvo Reciver 2",Toast.LENGTH_LONG).show();
     }
 }
