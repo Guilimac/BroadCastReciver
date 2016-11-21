@@ -28,7 +28,7 @@ public class AlarmeActivity extends AppCompatActivity {
             Intent i = new Intent(this, AlarmeReceiver.class);
             PendingIntent pi = PendingIntent.getBroadcast(this.getApplicationContext(),1,i,0);
             AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-            alarmManager.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()+(t*1000))
+            alarmManager.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()+(t*1000),pi);
 
         }
     }
