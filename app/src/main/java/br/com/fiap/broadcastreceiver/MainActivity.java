@@ -17,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent();
         i.setAction("android.app.action.ACTION_PASSWORD_SUCCEEDED");
         sendBroadcast(i);
+        Intent io = new Intent();
+        io.setAction("orderedBroadcast");
+        sendBroadcast(io);
+        Intent is = new Intent();
+        is.setAction("orderedBroadcast2");
+        sendBroadcast(is);
 
     }
 }

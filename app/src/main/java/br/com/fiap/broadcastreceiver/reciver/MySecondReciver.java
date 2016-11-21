@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MySecondReciver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
+        
         Toast.makeText(context,"Nvo Reciver 2",Toast.LENGTH_LONG).show();
     }
 }

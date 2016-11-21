@@ -18,27 +18,21 @@
 
         <receiver android:name=".reciver.MyReciver">
             <intent-filter>
-                <action android:name="android.app.action.ACTION_PASSWORD_SUCCEEDED">
-
-                </action>
+                <action android:name="android.app.action.ACTION_PASSWORD_SUCCEEDED"></action>
             </intent-filter>
         </receiver>
-
         <receiver android:name=".reciver.MyOrderedReciver">
             <intent-filter android:priority="1">
-                <action android:name="orderedBroadcast">
-
-                </action>
+                <action android:name="orderedBroadcast"></action>
             </intent-filter>
         </receiver>
-
         <receiver android:name=".reciver.MySecondReciver">
             <intent-filter android:priority="2">
-                <action android:name="orderedBroadcast2">
-                    
-                </action>
+                <action android:name="orderedBroadcast2"></action>
             </intent-filter>
         </receiver>
+
+        <activity android:name=".AlarmeActivity"></activity>
     </application>
 
 </manifest>
