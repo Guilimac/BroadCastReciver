@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import br.com.fiap.broadcastreceiver.receiver.AlarmeReceiver;
 
@@ -29,6 +30,7 @@ public class AlarmeActivity extends AppCompatActivity {
             PendingIntent pi = PendingIntent.getBroadcast(this.getApplicationContext(),1,i,0);
             AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
             alarmManager.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()+(t*1000),pi);
+            Toast.makeText(this,"Configurado para daqui " + tempo +" segundos",Toast.LENGTH_SHORT).show();
 
         }
     }
