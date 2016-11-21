@@ -39,7 +39,5 @@ public class AlarmeReceiver extends BroadcastReceiver {
         NotificationManager manager = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(100,builder.build());
 
-
-
     }
 }
